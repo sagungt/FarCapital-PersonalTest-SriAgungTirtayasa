@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail</title>
+</head>
+<body>
+  <table border="1">
+    <thead>
+      <tr>
+        <th scope="col">
+          Nama
+        </th>
+        <th scope="col">
+          Alamat
+        </th>
+        <th scope="col">
+          Jenis Kelamin
+        </th>
+        <th scope="col">
+          Tanggal Lahir
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">
+          {{nama}}
+        </td>
+        <td scope="row">
+          {{alamat}}
+        </td>
+        <td scope="row">
+          {{jenisKelamin}}
+        </td>
+        <td scope="row">
+          {{tanggalLahir}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <form action="/pendonor/lolos/{{id}}" method="post">
+    <label for="usia">Usia</label>
+    <input type="number" name="usia" id="usia"><br><br>
+
+    <label for="izin">Izin Orang Tua</label>
+    <input type="checkbox" name="izin" id="izin"><br><br>
+
+    <label for="bb">Berat Badan</label>
+    <input type="number" name="bb" id="bb"><br><br>
+
+    <label for="temp">Temperatur</label>
+    <input type="text" name="temp" id="temp"><br><br>
+
+    <label for="sistole">Tekanan Darah Sistole</label>
+    <input type="number" name="sistole" id="sistole"><br><br>
+
+    <label for="diastole">Tekanan Darah Diastole</label>
+    <input type="number" name="diastole" id="diastole"><br><br>
+
+    <label for="nadi">Denyut Nadi</label>
+    <input type="number" name="nadi" id="nadi"><br><br>
+
+    <label for="hemo">Hemoglobin</label>
+    <input type="number" name="hemo" id="hemo"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

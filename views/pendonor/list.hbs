@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Pendonor</title>
+</head>
+<body>
+  <table border="1">
+    <thead>
+      <tr>
+        <th scope="col">
+          Nama
+        </th>
+        <th scope="col">
+          Layak donor
+        </th>
+        <th scope="col">
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each data}}
+      <tr>
+        <th scope="row">
+          {{this.nama}}
+        </th>
+        <td class="py-4 px-6">
+          {{this.layak}}
+        </td>
+        <td class="py-4 px-6">
+          {{this.lolos}}
+        </td>
+        <td class="py-4 px-6">
+          <a href="/pendonor/detail/{{this.id}}">detail</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+</html>

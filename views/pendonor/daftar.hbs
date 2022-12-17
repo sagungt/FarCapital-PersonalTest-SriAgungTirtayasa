@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar sebagai pendonor</title>
+</head>
+<body>
+  <h1>Daftar Pendonor</h1>
+  <form action="/pendonor/daftar" method="post">
+    <label for="nama">Nama</label>
+    <input type="text" name="nama" id="nama"><br><br>
+
+    <label for="jenisKelamin">Jenis Kelamin</label>
+    <select name="jenisKelamin" id="jenisKelamin">
+      <option value="1">Laki-laki</option>
+      <option value="2">Perempuan</option>
+    </select><br><br>
+
+    <label for="tanggalLahir">Tanggal Lahir</label>
+    <input type="date" name="tanggalLahir" id="tanggalLahir"><br><br>
+
+    <label for="alamat">Alamat</label>
+    <textarea name="alamat" id="alamat"></textarea><br><br>
+
+    <button type="submit">Daftar</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donor</title>
+</head>
+<body>
+  <form action="/pendonor/validate/{{id}}" method="post">
+
+    <label for="form1">Apakah anda pernah menderita Hepatitis B ?</label>
+    <select name="form1" id="form1">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form2">Apakah dalam jangka waktu 6 bulan sesudah
+kontak erat dengan penderita hepatitis ?</label>
+    <select name="form2" id="form2">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form3">Apakah dalam jangka waktu 6 bulan sesudah
+mendapat transfusi ?</label>
+    <select name="form3" id="form3">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form4">Apakah dalam jangka waktu 6 bulan sesudah
+tato/tindik telinga ?</label>
+    <select name="form4" id="form4">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form5">Apakah dalam jangka waktu 72 jam sesudah
+operasi gigi ?</label>
+    <select name="form5" id="form5">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form6">Apakah dalam jangka waktu 6 bulan sesudah
+operasi kecil ?</label>
+    <select name="form6" id="form6">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form7">Apakah dalam jangka waktu 12 bulan sesudah
+operasi kecil ?</label>
+    <select name="form7" id="form7">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form8">Apakah dalam jangka waktu 24 jam sesudah vaksinasi polio, influenza, kolera, stetanus dipteria atau profilaksis ?</label>
+    <select name="form8" id="form8">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form9">Apakah dalam jangka waktu 2 minggu sesudah vaksinasi virus hidup parotitis epidemica, measles dan tetanus toxin ?</label>
+    <select name="form9" id="form9">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form10">Apakah dalam jangka waktu 1 tahun sesudah injeksi terakhir imunisasi rabies therapeutic ?</label>
+    <select name="form10" id="form10">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form11">Apakah dalam jangka waktu 1 minggu sesudah gejala alergi menghilang ?</label>
+    <select name="form11" id="form11">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form12">Apakah dalam jangka waktu 1 tahun sesudah
+transplantasi kulit ?</label>
+    <select name="form12" id="form12">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    {{#if perempuan}}
+
+    <label for="form13">Apakah sedang hamil dan dalam jangka waktu 6
+bulan sesudah persalinan ?</label>
+    <select name="form13" id="form13">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form14">Apakah sedang menyusui ?</label>
+    <select name="form14" id="form14">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+    
+    <label for="form23">Apakah syarat donor darah untuk perempuan, sebaiknya sedang tidak dalam masa haid ?</label>
+    <select name="form23" id="form23">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    {{/if}}
+
+
+    <label for="form15">Apakah ketergantungan obat ?</label>
+    <select name="form15" id="form15">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form16">Apakah alkoholisme akut dan kronis ?</label>
+    <select name="form16" id="form16">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form17">Apakah menderita tuberkulosis secara klinis ?</label>
+    <select name="form17" id="form17">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form18">Apakah Mengidap Sifilis ?</label>
+    <select name="form18" id="form18">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form19">Apakah Menderita epilepsi dan sering kejang ?</label>
+    <select name="form19" id="form19">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form20">Apakah Menderita penyakit kulit pada vena (pembuluh darah balik) yang akan ditusuk ?</label>
+    <select name="form20" id="form20">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form21">Apakah Mempunyai kecenderungan perdarahan atau penyakit darah, misalnya thalasemia - Seseorang yang termasuk kelompok masyarakat yang berisiko tinggi mendapatkan HIV dan AIDS (homoseks, morfinis, berganti-ganti pasangan seks dan pemakai jarum suntik tidak steril) ?</label>
+    <select name="form21" id="form21">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <label for="form22">Apakah Pengidap HIV dan AIDS menurut hasil pemeriksaan saat donor darah ?</label>
+    <select name="form22" id="form22">
+      <option value="1">Ya</option>
+      <option value="2">Tidak</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
