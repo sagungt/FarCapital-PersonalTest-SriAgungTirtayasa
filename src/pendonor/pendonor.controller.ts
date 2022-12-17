@@ -49,7 +49,7 @@ export class PendonorController {
     };
   }
 
-  @UseGuards(AuthenticatedGuard)
+  // @UseGuards(AuthenticatedGuard)
   @Get('/list')
   @Render('pendonor/list')
   async list(): Promise<{ data: any }> {

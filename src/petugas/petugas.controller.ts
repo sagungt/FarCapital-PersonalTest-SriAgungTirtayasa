@@ -1,12 +1,14 @@
 import {
-  Body, Controller, Get, Inject, Post, Render, Res, UseGuards, UsePipes, ValidationPipe,
+  Body, Controller, Get, Inject, Post, Render, Res, UseFilters, UseGuards, UsePipes, ValidationPipe,
 } from '@nestjs/common';
 import { Response } from 'express';
 import { CredentialPetugas } from 'src/dtos';
 import { LoginGuard } from 'src/common/guards/login.guard';
+import { AuthExceptionFilter } from '../common/filters/auth-exception.filter';
 import { PetugasService } from './petugas.service';
 
 @Controller('petugas')
+@UseFilters(AuthExceptionFilter)
 export class PetugasController {
   constructor(private readonly petugasService: PetugasService) {}
 
@@ -16,7 +18,9 @@ export class PetugasController {
 
   @Get('/login')
   @Render('petugas/login')
-  loginView(): void {}
+  loginView(@Res() res: Response): void {
+    res.redirect('/pendonor/list');
+  }
 
   @Post('/daftar')
   @UsePipes(ValidationPipe)
